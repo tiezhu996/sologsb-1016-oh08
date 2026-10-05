@@ -95,6 +95,22 @@ h3 { margin: 3px 0 0; font-size: 21px; }
 .dialog-card h2 { margin: 7px 0 12px; }
 .dialog-card p { color: #8895aa; font-size: 13px; line-height: 1.6; }
 .dialog-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 18px; }
+.language-switch { margin-right: 6px; }
+.language-banner { margin-bottom: 18px; }
+.language-banner .n-button { margin-left: 8px; }
+.source-line { padding: 10px 12px; border: 1px dashed #2b3445; border-radius: 8px; background: #0f1520; }
+.source-line p { margin: 7px 0 0; color: #c6d2e4; font-size: 13px; line-height: 1.6; }
+.source-meta { display: flex; align-items: center; gap: 12px; color: #78859d; font-size: 11px; }
+.localization-bar { display: flex; align-items: center; gap: 10px; }
+.localization-bar .n-button { margin-left: auto; flex-shrink: 0; }
+.stale-hint { color: #ffc777; font-size: 11px; line-height: 1.5; }
+.ok-hint { color: #73daca; font-size: 11px; }
+.freeze-blockers { margin-bottom: 14px; }
+.freeze-blockers ul { margin: 8px 0 0; padding-left: 18px; }
+.freeze-blockers li { margin: 4px 0; font-size: 12px; line-height: 1.5; }
+.export-language { display: flex; align-items: center; gap: 12px; margin-top: 14px; color: #8895aa; font-size: 12px; }
+.version-actions { display: flex; gap: 6px; flex-shrink: 0; }
+.cue-card.locked .cue-grip { cursor: default; opacity: .5; }
 @media (max-width: 1180px) {
   .topbar { grid-template-columns: 190px 1fr; height: auto; }
   .top-actions { grid-column: 1 / -1; justify-content: flex-end; }

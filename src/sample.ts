@@ -1,3 +1,4 @@
+import { makeLocalization } from './localization'
 import type { StudioDocument } from './types'
 
 export const sampleDocument: StudioDocument = {
@@ -48,4 +49,23 @@ export const sampleDocument: StudioDocument = {
       ]
     }
   ]
+}
+
+/** 粤语译配稿示例：一条未复核，用于演示冻结前的译配检查 */
+const cantoneseDrafts: Record<string, { text: string; reviewed: boolean }> = {
+  'cue-1-2': { text: '顾闻？你点解会喺呢个时间返嚟。', reviewed: true },
+  'cue-1-3': { text: '船误咗点。楼下有人讲，呢几日一直有人喺度搵你。', reviewed: true },
+  'cue-1-5': { text: '小林，电话！对方唔肯留名。', reviewed: true },
+  'cue-2-2': { text: '唔好回头。将封信放落第三个电话亭度。', reviewed: true },
+  'cue-2-3': { text: '嗰封冇署名嘅信，系你寄嘅？', reviewed: false },
+  'cue-3-1': { text: '信入面净系得一张旧船票，仲有你个名。', reviewed: true },
+  'cue-3-2': { text: '个名系我写嘅，船票唔系。有人想我哋一齐返返嚟呢度。', reviewed: true },
+  'cue-3-3': { text: '你哋要搵嘅人，寻晚已经上咗船啦。', reviewed: true }
+}
+
+for (const scene of sampleDocument.scenes) {
+  for (const cue of scene.cues) {
+    const draft = cantoneseDrafts[cue.id]
+    if (draft) cue.localizations = { cantonese: makeLocalization(cue, draft.text, draft.reviewed) }
+  }
 }
