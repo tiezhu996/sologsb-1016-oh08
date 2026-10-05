@@ -52,6 +52,21 @@ h3 { margin: 3px 0 0; font-size: 21px; }
 .scene-copy strong { font-size: 13px; }
 .scene-copy small { margin-top: 5px; color: #68768e; font-size: 11px; }
 .scene-duration { color: #73daca; font: 700 11px monospace; }
+.scene-meta { display: grid; justify-items: end; gap: 3px; }
+.scene-issue-badge { color: #ffc777 !important; }
+.readonly-hint { margin: 10px 2px 0; color: #8a96ab; font-size: 12px; }
+.loc-progress { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0 4px; }
+.loc-reference { display: flex; align-items: baseline; gap: 8px; margin-top: 9px; padding: 8px 10px; border-radius: 8px; background: #101722; border: 1px dashed #2c3850; }
+.loc-reference .reference-text { color: #93a2b8; font-size: 12.5px; line-height: 1.55; }
+.loc-stale-notice { margin-top: 8px; }
+.cue-card.loc-stale { border-left-color: #ffc777; }
+.cue-card.loc-missing { border-left-color: #ff7a8a; }
+.cue-card.loc-unreviewed { border-left-color: #e6c07b; }
+.freeze-lang { margin-bottom: 12px; }
+.freeze-lang-count { color: #ffc777; }
+.freeze-blockers { display: grid; gap: 8px; margin-bottom: 14px; }
+.freeze-blocker-row { display: flex; align-items: center; gap: 9px; }
+.blocker-text { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #aab6c9; font-size: 12.5px; }
 .sidebar-tip { margin: 24px 5px 14px; padding: 14px; display: grid; gap: 7px; border: 1px solid #253044; border-radius: 9px; color: #67758c; background: #111827; font-size: 11px; }
 .sidebar-tip strong { color: #9ba8bd; }
 .scene-title-row { align-items: flex-start; margin-bottom: 22px; }
